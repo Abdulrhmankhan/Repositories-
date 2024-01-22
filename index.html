@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories</title>
+    <!-- Include Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Include custom CSS link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include jQuery and Bootstrap JS links -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Include custom JavaScript file -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-center mb-4">GitHub Repositories</h2>
+                <div class="input-group mb-3">
+                    <input type="text" id="username" class="form-control" placeholder="Enter GitHub username" aria-label="GitHub username" aria-describedby="fetchButton">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" onclick="fetchRepositories()">Fetch Repositories</button>
+                    </div>
+                </div>
+                <div id="userProfile" class="text-center"></div>
+                <div id="repositories" class="list-group mt-3"></div>
+                <div id="pagination" class="text-center mt-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
